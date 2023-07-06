@@ -28,6 +28,8 @@ The data was collected for a period of 4 days in a controlled manner with the oc
 
 MQTT (Message Queuing Telemetry Transport) is a lightweight messaging protocol commonly used in IoT (Internet of Things) applications. It follows a publish-subscribe model, where devices publish messages to a central broker, and other devices subscribe to specific topics to receive those messages.
 
+For testing or prototyping, you can use public MQTT brokers like Eclipse Mosquitto and HiveMQ. EMQ X offers a free community edition for private MQTT deployment.
+
 In our project, you can find Python files in the MQTT_Publish directory, specifically designed for different sensors. These files are responsible for picking the relevant columns from our dataset and publishing the records one by one to specific topics on our local MQTT broker. This simulation aims to replicate the real-world scenario of sensor data publication. We have categorized the sensor data into six different topics based on IoT environment features: temperature (temp), light, sound, CO2, CO2 slope, and motion detection (PIR). By running each of these Python files, you can publish the sensor data associated with that particular sensor to the corresponding topic.
 
 Additionally, we have included a file named test.py in the MQTT_Subscribe directory, which allows you to subscribe to a specific topic in your MQTT broker and collect the relevant data. This file enables you to receive and analyze the sensor data published on the MQTT topics.
