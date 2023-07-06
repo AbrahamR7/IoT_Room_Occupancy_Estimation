@@ -9,10 +9,10 @@ Occupancy sensors have been widely implemented as an energy-saving method in sma
 ## Data Set Information:
 ### SOURCES
 The experimental testbed for occupancy estimation was deployed in a 6m Ã— 4.6m room. The setup consisted of 7 sensor nodes and one edge node in a star configuration with the sensor nodes transmitting data to the edge every 30s using wireless transceivers. No HVAC systems were in use while the dataset was being collected.
-Attribute Information:
+##### Attribute Information:
 
-Date: YYYY/MM/DD
-Time: HH:MM:SS
+. Date: YYYY/MM/DD
+. Time: HH:MM:SS
 Temperature: In degree Celsius
 Light: In Lux
 Sound: In Volts (amplifier output read by ADC)
