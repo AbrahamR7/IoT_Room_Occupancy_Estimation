@@ -72,5 +72,10 @@ In our case, by Creating anothe streaming DataFrame, we can read data from the D
 
 ## Data Dnalysis and Machine Learning
 
-Spark offers robust data analysis capabilities, including advanced analytics, machine learning, and graph processing. Databricks, built on Spark, provides convenient built-in visualization tools for data exploration and visualization. In our case, we create tables based on specific sensors and topics. By visualizing the sensor measurements against the target variable, which represents the number of people in the room, we aim to gain insights into the impact of various topics such as temperature, light, or sound on the target variable. This analysis helps us understand the relationship between sensor measurements and the target variable and identify any patterns or correlations that may exist.<img width="1961" alt="Screenshot 2023-07-08 at 01 07 22" src="https://github.com/AbrahamR7/IoT_Room_Occupancy_Estimation/assets/119547831/89710707-fbd9-4092-9eb2-df746fd68513">
+Spark offers robust data analysis capabilities, including advanced analytics, machine learning, and graph processing. Databricks, built on Spark, provides convenient built-in visualization tools for data exploration and visualization. In our case, we create tables based on specific sensors and topics. By visualizing the sensor measurements against the target variable, which represents the number of people in the room, we aim to gain insights into the impact of various topics such as temperature, light, or sound on the target variable. This analysis helps us understand the relationship between sensor measurements and the target variable and identify any patterns or correlations that may exist.
+
+#####<img width="1961" alt="Screenshot 2023-07-08 at 01 07 22" src="https://github.com/AbrahamR7/IoT_Room_Occupancy_Estimation/assets/119547831/89710707-fbd9-4092-9eb2-df746fd68513">
+
+#####<img width="1951" alt="Screenshot 2023-07-08 at 01 07 49" src="https://github.com/AbrahamR7/IoT_Room_Occupancy_Estimation/assets/119547831/53ccf370-5290-49e3-9398-62f5d7ae1e97">
+
 
