@@ -42,7 +42,7 @@ A powerful and scalable streaming platform that provides a distributed messaging
 
 In the Confluent_python_client directory, you will find Python client applications which produce and consume messages from an Apache Kafka cluster. If you do not have an existing cluster to use, the easiest way to run Kafka is with Confluent Cloud. New signups receive $400 to spend within Confluent Cloud during their first 60 days. Events in Kafka are organized and durably stored in named topics. When using Confluent Cloud, you can use the Confluent Cloud Console to create a topic. The topics created in Kafka Confluent for the project align with the concept of topics in MQTT brokers, However it's important to note that they differ in how they handle and manage these topics. In Kafka, topics are used for organizing and distributing streams of records, enabling producers to publish messages and consumers to subscribe and consume them. MQTT brokers, on the other hand, use topics as channels for publishing and subscribing to messages.
 
-For those seeking an alternative to Kafka Confluent, Apache Kafka serves as a robust and freely available option. As an open-source distributed streaming platform, Apache Kafka offers a comprehensive set of features and capabilities similar to Confluent Kafka. With its high-throughput, fault-tolerant architecture, Apache Kafka enables seamless data streaming, making it an ideal choice for building scalable and real-time data pipelines, event-driven architectures, and streaming applications. 
+For those seeking an alternative to Kafka Confluent, Apache Kafka serves as a robust and freely available option. As an open-source distributed streaming platform, Apache Kafka offers a comprehensive set of features and capabilities similar to Confluent Kafka.
 
 ## MQTT Brokers and Kafka Integration
 
@@ -60,4 +60,17 @@ Delta Lake is an open-source storage layer that brings reliability, performance,
 
 The Databricks notebook in the project serves as a "Hello World" introduction to big data management, showcasing key concepts and techniques in a practical manner.
 
+## Structured Streaming
+
+Structured Streaming is a scalable and fault-tolerant stream processing engine built on the Spark SQL engine. You can express your streaming computation the same way you would express a batch computation on static data. The Spark SQL engine will take care of running it incrementally and continuously and updating the final result as streaming data continues to arrive. Structured Streaming provides a unified batch and streaming API that enables us to view data published to Kafka as a DataFrame.
+
+The first step is to specify the location of our Kafka cluster and which topic we are interested in reading from. Spark allows you to read an individual topic, a specific set of topics, a regex pattern of topics, or even a specific set of partitions belonging to a set of topics. In my project databricks notebook you will find Kafka, an streaming DataFrame subscribed to all the topics. Then streaming data can be easily stored in a Delta Lake using the writeStream function in Databricks. 
+
+In real-world scenarios, the data stored in a Delta Lake can be used for a wide range of purposes. Companies can perform data analysis and generate insights, monitor business performance, detect anomalies, identify patterns, and make data-driven decisions. Enabling real-time reporting, dashboarding, and data visualization, the data in Delta Lake can be integrated with other systems and applications.
+
+In our case, by Creating anothe streaming DataFrame, we can read data from the Delta Lake with the ability to perform partition filtering, ensuring efficient retrieval of the desired data.
+
+## Data Dnalysis and Machine Learning
+
+Spark offers robust data analysis capabilities, including advanced analytics, machine learning, and graph processing. Databricks, built on Spark, provides convenient built-in visualization tools for data exploration and visualization. In our case, we create tables based on specific sensors and topics. By visualizing the sensor measurements against the target variable, which represents the number of people in the room, we aim to gain insights into the impact of various topics such as temperature, light, or sound on the target variable. This analysis helps us understand the relationship between sensor measurements and the target variable and identify any patterns or correlations that may exist.<img width="1961" alt="Screenshot 2023-07-08 at 01 07 22" src="https://github.com/AbrahamR7/IoT_Room_Occupancy_Estimation/assets/119547831/89710707-fbd9-4092-9eb2-df746fd68513">
 
