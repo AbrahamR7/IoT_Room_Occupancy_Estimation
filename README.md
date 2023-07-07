@@ -51,4 +51,13 @@ To build a high-performance data pipeline, store large volumes of data to databa
 
 To achieve decentralized control over data flows, enabling error handling and troubleshooting, a decoupled approach is employed in bridging MQTT broker and Kafka. The project includes a "Bridge" directory consisting of multiple Python files, each dedicated to establishing a bridge between a specific MQTT broker topic and its corresponding topic on the Kafka server. To establish the connection, you can utilize the "run.sh" bash script located in the Bridge directory, which concurrently runs all the Python files. Once the connection is established, any data published on the MQTT broker will be automatically sent to the Kafka server, facilitating seamless data transfer between the two systems. This decentralized approach enhances flexibility and scalability in managing data flows while providing effective control and monitoring capabilities.
 
+## Databricks, Spark and Delta lake 
+
+Databricks is a cloud-based data analytics platform that provides a collaborative environment for big data processing and advanced analytics. It is tightly integrated with Apache Spark, an open-source distributed computing system renowned for its speed and versatility. Databricks simplifies the deployment and management of Spark clusters, allowing data scientists and engineers to focus on extracting insights from vast datasets.In this project, we are utilizing Databricks Community Version, which provides a single node setup, ideal for educational purposes. While it may not offer the full power of cluster processing like the enterprise version, it serves as a suitable choice for our project, allowing us to leverage the collaborative environment, notebook-based development, and distributed data processing capabilities provided by Databricks.
+
+
+Delta Lake is an open-source storage layer that brings reliability, performance, and scalability to data lakes in Databricks. It enhances the functionality of data lakes by providing ACID (Atomicity, Consistency, Isolation, Durability) transactions, schema enforcement, and data versioning capabilities. Delta Lake enables organizations to build robust and trustworthy data pipelines by ensuring data integrity, enabling rollbacks, and simplifying data quality management. 
+
+The Databricks notebook in the project serves as a "Hello World" introduction to big data management, showcasing key concepts and techniques in a practical manner.
+
 
