@@ -71,7 +71,7 @@ In our case, by Creating anothe streaming DataFrame, we can read data from the D
 
 ## Data Dnalysis and Machine Learning
 
-Spark offers robust data analysis capabilities, including advanced analytics, machine learning, and graph processing. Databricks, built on Spark, provides convenient built-in visualization tools for data exploration and visualization. In our case, we create tables based on specific sensors and topics. By visualizing the sensor measurements against the target variable, which represents the number of people in the room, we aim to gain insights into the impact of various topics such as temperature, light, or sound on the target variable. This analysis helps us understand the relationship between sensor measurements and the target variable and identify any patterns or correlations that may exist.
+Spark offers robust data analysis capabilities, including advanced analytics, machine learning, and graph processing. Databricks, provides convenient built-in visualization tools for data exploration and visualization. In our case, we create tables based on specific sensors and topics. By visualizing the sensor measurements against the target variable, which represents the number of people in the room, we aim to gain insights into the impact of various topics such as temperature, light, or sound on the target variable. This analysis helps us understand the relationship between sensor measurements and the target variable and identify any patterns or correlations that may exist.
 
 <img width="1945" alt="Screenshot 2023-07-08 at 01 36 09" src="https://github.com/AbrahamR7/IoT_Room_Occupancy_Estimation/assets/119547831/204bb3d1-b1e2-47d1-b077-b580f49ef736">
 
