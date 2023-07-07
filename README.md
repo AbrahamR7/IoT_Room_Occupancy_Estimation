@@ -38,7 +38,7 @@ Through this setup, we aim to accurately simulate the publication and collection
 
 #  Kafka Confluent
 
-Confluent Kafka is a powerful and scalable streaming platform that provides a distributed messaging system capable of handling high-throughput data streams. Built on top of Apache Kafka, Confluent offers additional enterprise features and tools to simplify the management and integration of Kafka into various applications and environments.
+A powerful and scalable streaming platform that provides a distributed messaging system capable of handling high-throughput data streams. Built on top of Apache Kafka, Confluent offers additional enterprise features and tools to simplify the management and integration of Kafka into various applications and environments.
 
 In the Confluent_python_client directory, you will find Python client applications which produce and consume messages from an Apache Kafka cluster. If you do not have an existing cluster to use, the easiest way to run Kafka is with Confluent Cloud. New signups receive $400 to spend within Confluent Cloud during their first 60 days. Events in Kafka are organized and durably stored in named topics. When using Confluent Cloud, you can use the Confluent Cloud Console to create a topic. The topics created in Kafka Confluent for the project align with the concept of topics in MQTT brokers, However it's important to note that they differ in how they handle and manage these topics. In Kafka, topics are used for organizing and distributing streams of records, enabling producers to publish messages and consumers to subscribe and consume them. MQTT brokers, on the other hand, use topics as channels for publishing and subscribing to messages.
 
